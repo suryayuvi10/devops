@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .login-form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 250px;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form input[type="submit"] {
+      width: 100px;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .background-container {
+      position: relative;
+      flex: 1;
+    }
+
+    .green-background {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 100%;
+      background-image: url(images/aakash2.png);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    <div class="background-container">
+      <div class="green-background"></div>
+    
+    </div>
+  </div>
+</body>
+
+</html>
