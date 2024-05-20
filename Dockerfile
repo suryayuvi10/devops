@@ -6,5 +6,5 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["nginx", "-g"]
+CMD ["nginx", "-g","daemon off;"]
 
