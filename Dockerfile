@@ -1,4 +1,4 @@
-FROM nginx:alpine -t docker
+FROM nginx:alpine
 
 WORKDIR /usr/share/nginx/html
 
