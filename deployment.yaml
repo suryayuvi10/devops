@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  selector:
+    matchLabels:
+      app: login-page
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: login-page
+    spec:
+      containers:
+      - name: html-css
+        image: 616663264699.dkr.ecr.ap-south-1.amazonaws.com/devops:1.0
+        ports:
+        - containerPort: 8081
